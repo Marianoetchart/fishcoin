@@ -5,7 +5,7 @@ from django.db import models
 
 class Fish(models.Model):
         code = models.CharField(max_length=255)
-        created = models.DateTimeField('auto_now_add=True')
+        #created = models.DateTimeField('auto_now_add=True')
         weight = models.CharField(max_length=255)
         type = models.CharField(max_length=255)
         species = models.CharField(max_length=255)
@@ -13,13 +13,8 @@ class Fish(models.Model):
         longitude = models.FloatField()
         photo = models.URLField(max_length=200)
 
+        def __str__(self):
+                return  self.name
 
-
-
-
-
-
-
-
-
-
+        class Meta:
+                ordering = ['name']

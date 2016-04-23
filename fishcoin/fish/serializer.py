@@ -6,4 +6,6 @@ from rest_framework import serializers
 class FishSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Fish
-        fields = ('code', 'created','weight','type','species','latitude','longtude','photo')
+        fields = ('code','weight','type','species','latitude','longitude','photo')
+
+search_url = serializers.SerializerMethodField('get_search_url')
