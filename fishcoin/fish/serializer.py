@@ -1,0 +1,9 @@
+
+
+from fish.models import Fish
+from rest_framework import serializers
+
+class FishSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Fish
+        fields = ('code', 'created','weight','type','species','latitude','longtude','photo')
