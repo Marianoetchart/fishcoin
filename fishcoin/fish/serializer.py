@@ -8,4 +8,3 @@ class FishSerializer(serializers.HyperlinkedModelSerializer):
         model = Fish
         fields = ('code','weight','type','species','latitude','longitude','photo')
 
-search_url = serializers.SerializerMethodField('get_search_url')
