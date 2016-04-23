@@ -13,3 +13,4 @@ class FishViewSet(viewsets.ModelViewSet):
 
     queryset = Fish.objects.all()
     serializer_class = FishSerializer
+
