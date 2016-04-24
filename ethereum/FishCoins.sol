@@ -73,5 +73,6 @@ contract FishCoins{
    /* currently adding */
    //fish lifespan
    //notify monitoring body if exceptions are thrown
-   //combination logic (trakcing lifetime of fish products)
+   //combination logic (tracking lifetime of fish products)
+   //app verification input
 }
