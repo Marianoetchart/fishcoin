@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.fishcoin.fishackathon" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FISHCOIN</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" />
+    <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-native-transitions" />
+    <plugin name="cordova-plugin-statusbar" />
+    <plugin name="phonegap-plugin-barcodescanner"/>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="icon/ios/icon.png" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+          <!--
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
+        <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi" />
+        <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi" />
+        <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi" />
+        <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi" />
+        <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi" />
+        <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="www/res/icon/ios/icon-60@3x.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="www/res/icon/ios/icon-60.png" width="60" height="60" />
+        <icon src="www/res/icon/ios/icon-60@2x.png" width="120" height="120" />
+        <!-- iPad -->
+        <icon src="www/res/icon/icon-76.png" width="76" height="76" />
+        <icon src="www/res/icon/ios/icon-76@2x.png" width="152" height="152" />
+        <!-- iOS 6.1 -->
+        <!-- Spotlight Icon -->
+        <icon src="www/res/icon/ios/icon-40.png" width="40" height="40" />
+        <icon src="www/res/icon/ios/icon-40@2x.png" width="80" height="80" />
+        <!-- iPhone / iPod Touch -->
+        <icon src="www/res/icon/ios/icon.png" width="57" height="57" />
+        <icon src="www/res/icon/ios/icon@2x.png" width="114" height="114" />
+        <!-- iPad -->
+        <icon src="www/res/icon/ios/icon-72.png" width="72" height="72" />
+        <icon src="www/res/icon/ios/icon-72@2x.png" width="144" height="144" />
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="www/res/icon/ios/icon-small.png" width="29" height="29" />
+        <icon src="www/res/icon/ios/icon-small@2x.png" width="58" height="58" />
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="www/res/icon/ios/Icon-50.png" width="50" height="50" />
+        <icon src="www/res/icon/ios/Icon-50@2x.png" width="100" height="100" />
+    </platform>
+</widget>
