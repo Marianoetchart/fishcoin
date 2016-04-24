@@ -16,7 +16,6 @@ from fish.models import Fish
 from fish.serializer import FishSerializer
 from binascii import a2b_base64
 import requests
-from fish import FlaskClass
 
 
 # Create your views here.
@@ -84,6 +83,7 @@ def fish_list(request):
     elif request.method == 'POST':
 
         ClassifyFish(request.data['photo'])
+
         serializer = FishSerializer(data=request.data)
 
         if serializer.is_valid():
