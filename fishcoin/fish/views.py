@@ -16,6 +16,7 @@ from fish.models import Fish
 from fish.serializer import FishSerializer
 from binascii import a2b_base64
 import requests
+from fish import FlaskClass
 
 
 # Create your views here.
@@ -45,31 +46,26 @@ class FishViewSet(viewsets.ModelViewSet):
     serializer_class = FishSerializer
 
 
-def ClassifyFish(url):
+#def ClassifyFish(url):
 
 
-    data = url
-    binary_data = a2b_base64(data)
+    #data = url
+    #binary_data = a2b_base64(data)
 
-    fd = open('image.png', 'wb')
-    fd.write(binary_data)
-    fd.close()
+    #fd = open('image.png', 'wb')
+    #fd.write(binary_data)
+    #fd.close()
 
 
     #file = io.BytesIO(urllib.urlopen(url).read())
-    im = Image.open('image.png')
-    im = im.resize((500, 500), Image.ANTIALIAS) #Could increase resolution which might improve accuracy
-    image = np.reshape(np.array(im.getdata()).flatten(),(np.array(im.getdata()).flatten().shape[0],1))
+    #im = Image.open('image.png')
+    #im = im.resize((500, 500), Image.ANTIALIAS) #Could increase resolution which might improve accuracy
+    #image = np.reshape(np.array(im.getdata()).flatten(),(np.array(im.getdata()).flatten().shape[0],1))
 
-    with open('Scaled_model.pkl', 'rb') as fid:
-        gnb_loaded = pickle.load(fid)
+    #with open('Scaled_model.pkl', 'rb') as fid:
+        #gnb_loaded = pickle.load(fid)
 
-    return gnb_loaded.predict(np.transpose(image))
-
-
-
-
-
+    #return gnb_loaded.predict(np.transpose(image))
 
 
 
