@@ -6,5 +6,5 @@ from rest_framework import serializers
 class FishSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Fish
-        fields = ('code','weight','type','species','latitude','longitude','photo')
+        fields = ('code','weight','type','species','latitude','longitude','photo','classified')
 
