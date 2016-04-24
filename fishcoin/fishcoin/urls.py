@@ -19,6 +19,8 @@ from rest_framework import routers
 from fish import views
 
 
+
+
 router = routers.DefaultRouter()
 #makes sure that the API endpoints work
 router.register(r'api/fish', views.FishViewSet)
