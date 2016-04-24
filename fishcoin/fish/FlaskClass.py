@@ -16,7 +16,7 @@ app = Flask(__name__)
 @app.route('/classify/')
 def ClassifyFish():
     # get number of items from the javascript request
-    nitems = request.args.get('photo', 2)
+    nitems = request.args.get('photo')
 
     data = nitems
     binary_data = a2b_base64(data)
