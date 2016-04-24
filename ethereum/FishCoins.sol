@@ -69,4 +69,9 @@ contract FishCoins{
    function () {
        throw;     // Prevents accidental sending of ether
    }
+
+   /* currently adding */
+   //fish lifespan
+   //notify monitoring body if exceptions are thrown
+   //combination logic (trakcing lifetime of fish products)
 }
