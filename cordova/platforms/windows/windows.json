@@ -1,0 +1,137 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "package.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<DeviceCapability Name=\"webcam\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-native-transitions": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "FISHCOIN"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+            "id": "cordova-plugin-globalization.GlobalizationError",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "window.GlobalizationError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+            "id": "cordova-plugin-globalization.globalization",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "navigator.globalization"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/src/windows/GlobalizationProxy.js",
+            "id": "cordova-plugin-globalization.GlobalizationProxy",
+            "pluginId": "cordova-plugin-globalization",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+            "id": "cordova-plugin-camera.Camera",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "Camera"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+            "id": "cordova-plugin-camera.CameraPopoverOptions",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "CameraPopoverOptions"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/Camera.js",
+            "id": "cordova-plugin-camera.camera",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "navigator.camera"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+            "id": "cordova-plugin-camera.CameraPopoverHandle",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "CameraPopoverHandle"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/src/windows/CameraProxy.js",
+            "id": "cordova-plugin-camera.CameraProxy",
+            "pluginId": "cordova-plugin-camera",
+            "merges": [
+                ""
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-native-transitions/www/nativetransitions.js",
+            "id": "cordova-plugin-native-transitions.NativeTransitions",
+            "pluginId": "cordova-plugin-native-transitions",
+            "clobbers": [
+                "nativetransitions"
+            ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+            "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+            "pluginId": "phonegap-plugin-barcodescanner",
+            "clobbers": [
+                "cordova.plugins.barcodeScanner"
+            ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-barcodescanner/src/windows/BarcodeScannerProxy.js",
+            "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
+            "pluginId": "phonegap-plugin-barcodescanner",
+            "merges": [
+                ""
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-globalization": "1.0.3",
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-camera": "2.2.0",
+        "cordova-plugin-native-transitions": "0.2.3",
+        "cordova-plugin-compat": "1.0.0",
+        "phonegap-plugin-barcodescanner": "4.1.0"
+    }
+}

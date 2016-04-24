@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>FISHCOIN</title>
+    </head>
+    <body>
+        <div id="statusbar"></div>
+        <nav><p class="back-btn">Back</p><h2>FISHCOIN</h2></nav>
+        
+        <div id="selection-screen">
+            <img src="img/logo.png">
+            <h3>Caught a fish?</h3>
+            <button id="registeruser-btn">REGISTER FISH</button>
+            <h3>Where is my fish from?</h3>
+            <button id="scancode-btn">SCAN CODE</button>
+            <h3>Trade fish</h3>
+            <button id="tradefish-btn">TRADE FISH</button>
+        </div>
+        
+        <div id="admin-app">            
+           <div id="p1" class="page">
+               <h3>Select the type of fish in your Catch:</h3>
+                <div id="type"></div>
+               <button class="next_btn">NEXT</button>
+           </div>
+            
+            <div id="p2" class="page">
+               <p>Next, you will need to take a photograph of your catch as part of a species verification process and this will be shown to the end consumer.</p>
+                <h4>Guidelines:</h4>
+               <ul>
+                    <li>Include whole catch in view</li>
+                    <li>Make sure species is clearly in view</li>
+               </ul>
+               <button id="take-picture">Take Photo</button>
+           </div>
+            
+            <div id="p3" class="page">
+                <div id="photo-block">
+                    <img id="photo-display" alt="Fish Image">
+                    <button class="next_btn">SUBMIT PHOTO</button>
+                </div>
+            </div>
+            
+            <div id="p4" class="page">
+               <h3>Enter weight of catch:</h3>
+               <form>
+                  <input id="weight" type="text">
+               </form>
+                <button id="generatedata_btn">GENERATE CODE</button>
+           </div>
+            
+            <div id="p5" class="page">
+               <h3>Here is your unique fishcoin</h3>
+               <p class="weight"></p>
+               <p class="type"></p>
+               <h3 class="code"></h3>
+           </div>
+        </div>
+        
+        <div id="scan-app">
+            <div id="p1" class="page">
+                <h3>Input the code to get details</h3>
+                <input type="text">
+               <button class="next_btn">SUBMIT</button>
+           </div>
+            <div id="p2" class="page">
+                <img src="img/map.png" style="width:100%; height:380px;">
+                    
+                <h3>Your fish journey</h3>
+                <p>Weight : 300kg</p>
+                <p>Type : Salmon</p>
+            </div>
+        </div>
+        
+        <div id="tradefish-app">
+             <div id="p1" class="page">
+                <h3>Trade fishcoin</h3>
+                <button class="next_btn">BUY</button>
+                <button class="sell_btn">SELL</button>
+           </div>
+            <div id="p2" class="page">
+                <h3>Buy</h3>
+                <input type="text" placeholder="FISHCOIN ID">
+                <input type="text" placeholder="WEIGHT (e.g. 50kg)">
+                <button class="buy_btn">BUY</button>
+           </div>
+            <div id="p3" class="page">
+                <h3>Sell</h3>
+                <input type="text" placeholder="FISHCOIN ID">
+                <input type="text" placeholder="WEIGHT (e.g. 50kg)">
+                <button class="next_btn">SELL</button>
+           </div>
+            <div id="p4" class="page">
+                <h3>Congratulations. Your transation was complete</h3>
+            </div>
+        </div>
+        
+        <canvas id="myCanvas" style="display:none;" />
+        
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

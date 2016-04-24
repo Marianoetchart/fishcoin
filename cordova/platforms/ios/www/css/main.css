@@ -1,0 +1,251 @@
+/* line 1, ../../../SASS/main.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, ../../../SASS/main.scss */
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/* line 11, ../../../SASS/main.scss */
+#statusbar {
+  height: 20px;
+  background-color: #ff5f2e;
+}
+
+/* line 16, ../../../SASS/main.scss */
+nav {
+  height: 40px;
+  background-color: #ff5f2e;
+  text-align: center;
+}
+/* line 21, ../../../SASS/main.scss */
+nav h2 {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 15px;
+  margin: 0px auto;
+}
+/* line 32, ../../../SASS/main.scss */
+nav .back-btn {
+  color: white;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+/* line 42, ../../../SASS/main.scss */
+#selection-screen {
+  text-align: center;
+  margin: 0px auto;
+}
+/* line 46, ../../../SASS/main.scss */
+#selection-screen img {
+  width: 50%;
+  margin: 20px auto;
+}
+/* line 51, ../../../SASS/main.scss */
+#selection-screen h3 {
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+/* Portrait layout (default) */
+/* line 58, ../../../SASS/main.scss */
+#admin-app {
+  display: none;
+}
+/* line 61, ../../../SASS/main.scss */
+#admin-app .page {
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+}
+/* line 67, ../../../SASS/main.scss */
+#admin-app #p1 {
+  display: block;
+}
+/* line 68, ../../../SASS/main.scss */
+#admin-app #p1 h3 {
+  margin: 10px 0px;
+}
+/* line 71, ../../../SASS/main.scss */
+#admin-app #p2 {
+  display: none;
+}
+/* line 74, ../../../SASS/main.scss */
+#admin-app #p2 p, #admin-app #p2 h4 {
+  margin: 20px 0px;
+}
+/* line 78, ../../../SASS/main.scss */
+#admin-app #p2 ul li {
+  margin-top: 8px;
+  list-style: none;
+}
+/* line 83, ../../../SASS/main.scss */
+#admin-app #p2 ul {
+  margin-bottom: 10px;
+}
+/* line 87, ../../../SASS/main.scss */
+#admin-app #p3 {
+  display: none;
+  width: 100%;
+}
+/* line 91, ../../../SASS/main.scss */
+#admin-app #p3 #photo-display {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+/* line 96, ../../../SASS/main.scss */
+#admin-app #p3 button {
+  margin: 0px;
+}
+/* line 99, ../../../SASS/main.scss */
+#admin-app #p4 {
+  display: none;
+}
+/* line 101, ../../../SASS/main.scss */
+#admin-app #p4 h3 {
+  margin: 20px 0px;
+}
+/* line 104, ../../../SASS/main.scss */
+#admin-app #p4 input {
+  height: 40px;
+  width: 90%;
+  text-indent: 10px;
+  font-size: 18px;
+}
+/* line 110, ../../../SASS/main.scss */
+#admin-app #p5 {
+  display: none;
+}
+/* line 112, ../../../SASS/main.scss */
+#admin-app #p5 p {
+  margin: 10px 0px;
+}
+/* line 115, ../../../SASS/main.scss */
+#admin-app #p5 h3 {
+  margin: 20px 0px;
+}
+/* line 120, ../../../SASS/main.scss */
+#admin-app #type {
+  width: 100%;
+  height: 350px;
+  border: 1px #CCC9D0 solid;
+  overflow-y: scroll;
+  word-break: break-all;
+  cursor: pointer;
+}
+/* line 128, ../../../SASS/main.scss */
+#admin-app #type .selectedfish {
+  width: 400px;
+  height: 80px;
+  background-color: white;
+  display: block;
+  border-bottom: 1px #CCC9D0 solid;
+  text-align: left;
+}
+/* line 136, ../../../SASS/main.scss */
+#admin-app #type .selectedfish h4 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 800;
+  padding-top: 8px;
+  margin-left: 10px;
+}
+/* line 144, ../../../SASS/main.scss */
+#admin-app #type .selectedfish p {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+/* line 154, ../../../SASS/main.scss */
+#scan-app {
+  display: none;
+}
+/* line 157, ../../../SASS/main.scss */
+#scan-app .page {
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+}
+/* line 163, ../../../SASS/main.scss */
+#scan-app #p1 {
+  display: block;
+}
+/* line 166, ../../../SASS/main.scss */
+#scan-app #p1 h3 {
+  margin: 20px 0px;
+}
+/* line 169, ../../../SASS/main.scss */
+#scan-app #p1 input {
+  height: 40px;
+  width: 90%;
+  text-indent: 10px;
+  font-size: 18px;
+}
+/* line 177, ../../../SASS/main.scss */
+#scan-app #p2 {
+  display: none;
+  width: 100%;
+}
+
+/* line 184, ../../../SASS/main.scss */
+#tradefish-app .page {
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+  display: none;
+}
+/* line 191, ../../../SASS/main.scss */
+#tradefish-app h3 {
+  margin: 15px auto;
+}
+/* line 195, ../../../SASS/main.scss */
+#tradefish-app #p1 {
+  display: none;
+}
+/* line 198, ../../../SASS/main.scss */
+#tradefish-app #p2 {
+  display: none;
+}
+/* line 201, ../../../SASS/main.scss */
+#tradefish-app #p3 {
+  display: none;
+}
+/* line 204, ../../../SASS/main.scss */
+#tradefish-app #p4 {
+  display: none;
+}
+/* line 209, ../../../SASS/main.scss */
+#tradefish-app input {
+  height: 40px;
+  width: 90%;
+  text-indent: 10px;
+  font-size: 18px;
+}
+
+/* line 217, ../../../SASS/main.scss */
+button {
+  width: 250px;
+  background-color: #004e66;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
