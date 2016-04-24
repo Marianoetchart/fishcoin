@@ -1,0 +1,68 @@
+<!doctype>
+    <html>
+    <head>
+    <script type="text/javascript">
+		web3.eth.defaultAccount = web3.eth.accounts[0];
+    function getRating() {
+        var param = document.getElementById("query").value;
+        var res = contracts["Rating"].contract.ratings(param);
+        document.getElementById("queryres").innerText = res;
+    }
+
+    function setRating() {
+        var key = document.getElementById("key").value;
+        var value = parseInt(document.getElementById("value").value);
+        var res = contracts["Rating"].contract.setRating(key, value);
+    }
+    </script>
+    </head>
+    <body bgcolor="#E6E6FA">
+        <h1>Ratings</h1>
+        <div>
+            Store:
+            <input type="string" id="key">
+            <input type="number" id="value">
+            <button onclick="setRating()">Save</button>
+        </div>
+        <div>
+            Query:
+            <input type="string" id="query" onkeyup='getRating()'>
+            <div id="queryres"></div>
+        </div>
+    </body>
+    </html>
+
+<!--
+<!doctype>
+<html>
+<head>
+<script type='text/javascript'>
+
+function get() {
+	var param = document.getElementById('query').value;
+	var res = contracts['Sample'].contract.get();
+	document.getElementById('queryres').innerText = res;
+}
+
+function set() {
+	var key = document.getElementById('key').value;
+	var res = contracts['Sample'].contract.set(key);
+}
+
+</script>
+</head>
+<body bgcolor='#E6E6FA'>
+	<h3>Sample Ratings</h3>
+<div>
+Store:
+	<input type='number' id='key'>
+	<button onclick='set()'>Save</button>
+</div>
+<div>
+Query:
+	<input value='get' type='button' id='query' onclick='get()' />
+	<div id='queryres'></div>
+</div>
+</body>
+</html>
+-->
